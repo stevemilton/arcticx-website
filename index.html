@@ -5,40 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arcticx.ai - Proprietary AI Solutions</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
             --accent: #00FFFF;
         }
 
         body {
-            font-family: 'Roboto Mono', monospace;
+            font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
             scroll-behavior: smooth;
             background: radial-gradient(circle at top, #04101a 0, #02040a 40%, #000000 100%);
+        }
+
+        p, li {
+            font-size: 0.98rem;
+            line-height: 1.7;
         }
 
         .orbitron {
             font-family: 'Orbitron', sans-serif;
         }
 
-      .hero-background {
-    background-image: url('images/mountain.jpg');
-    background-size: cover;
-    background-position: center;
-    filter: grayscale(25%) brightness(1.15);
-}
+        .hero-background {
+            background-image: url('images/mountain.jpg');
+            background-size: cover;
+            background-position: center;
+            filter: grayscale(25%) brightness(1.15);
+        }
 
         .glow-soft {
-            text-shadow: 0 0 6px rgba(0, 255, 255, 0.35);
+            text-shadow: 0 0 9px rgba(0, 255, 255, 0.55);
         }
 
         .border-glow-soft {
-            border: 1px solid rgba(0, 255, 255, 0.2);
-            box-shadow: 0 0 20px rgba(0, 255, 255, 0.15);
+            border: 1px solid rgba(0, 255, 255, 0.24);
+            box-shadow: 0 0 22px rgba(0, 255, 255, 0.22);
+        }
+
+        .btn-primary-glow {
+            box-shadow: 0 0 22px rgba(34, 211, 238, 0.55);
         }
 
         .card-bg {
-            background: radial-gradient(circle at top left, rgba(0,255,255,0.06), transparent 55%),
+            background: radial-gradient(circle at top left, rgba(0,255,255,0.04), transparent 55%),
                         #060810;
         }
 
@@ -70,7 +79,7 @@
 <header class="sticky top-0 z-50 bg-black/80 backdrop-blur border-b border-slate-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-16">
-            <a href="#" class="orbitron text-xl font-extrabold tracking-[0.18em] text-white glow-soft">
+            <a href="#" class="orbitron text-xl font-extrabold tracking-[0.18em] text-white">
                 ARCTICX.AI
             </a>
             <nav class="hidden md:flex items-center space-x-8 text-sm">
@@ -106,7 +115,7 @@
     <!-- HERO -->
     <section class="relative">
         <div class="hero-background absolute inset-0"></div>
-<div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/65 to-black"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/65 to-black"></div>
 
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="min-h-[80vh] flex flex-col md:flex-row items-center justify-center gap-12 py-16">
@@ -120,7 +129,7 @@
                         </p>
                         <div class="flex flex-wrap items-center gap-4">
                             <a href="#contact"
-                               class="inline-flex items-center justify-center px-6 py-3 rounded-sm bg-cyan-400 text-black orbitron font-bold text-sm sm:text-base tracking-wide hover:bg-white transition">
+                               class="inline-flex items-center justify-center px-6 py-3 rounded-sm bg-cyan-400 text-black orbitron font-bold text-sm sm:text-base tracking-wide hover:bg-white transition btn-primary-glow">
                                 REQUEST ARCHITECTURE DECK
                             </a>
                             <a href="#paradox"
@@ -132,7 +141,7 @@
                 </div>
 
                 <div class="w-full md:w-2/5">
-                    <div class="border border-slate-800/80 bg-black/70 rounded-xl p-6 sm:p-7 backdrop-blur">
+                    <div class="border border-slate-800/40 bg-black/70 rounded-xl p-6 sm:p-7 backdrop-blur">
                         <p class="text-xs uppercase tracking-[0.2em] text-cyan-400 mb-4">
                             MEASURABLE RESULTS
                         </p>
@@ -162,31 +171,31 @@
     <!-- PARADOX -->
     <section id="paradox" class="py-20 px-4 sm:px-6 lg:px-8 data-grid-pattern border-t border-slate-900">
         <div class="max-w-6xl mx-auto text-center">
-            <h2 class="orbitron text-3xl sm:text-4xl font-bold mb-6 text-cyan-400 glow-soft">
+            <h2 class="orbitron text-3xl sm:text-4xl font-bold mb-6 text-cyan-400">
                 THE AI PARADOX: ENTERPRISE KNOWLEDGE LOCKED
             </h2>
-            <p class="text-base sm:text-lg leading-relaxed text-slate-200 max-w-3xl mx-auto mb-12">
+            <p class="text-base sm:text-lg leading-relaxed text-slate-200 max-w-3xl mx-auto mb-16">
                 90% of business value is locked in proprietary, unstructured data (legal, financial, internal research). Business leaders know they need AI, but generic, public platforms cannot touch sensitive IP.
             </p>
             <div class="grid md:grid-cols-3 gap-8 text-left">
-                <div class="card-bg rounded-xl border border-slate-800/80 p-7 hover:border-cyan-400/60 hover:shadow-[0_0_30px_rgba(34,211,238,0.25)] transition">
+                <div class="card-bg rounded-xl border border-slate-800/80 p-8 hover:border-cyan-400/60 transition">
                     <span class="text-cyan-400 text-3xl mb-2 block orbitron">R01</span>
-                    <h3 class="orbitron text-xl font-semibold mb-3">Risk of Hallucination</h3>
-                    <p class="text-sm sm:text-base text-slate-300 leading-relaxed">
+                    <h3 class="orbitron text-xl font-semibold mb-3 text-white">Risk of Hallucination</h3>
+                    <p class="text-slate-300 leading-relaxed">
                         General LLMs lie, confidently, when asked specific business questions. Precision is non-negotiable for Alpha generation.
                     </p>
                 </div>
-                <div class="card-bg rounded-xl border border-slate-800/80 p-7 hover:border-cyan-400/60 hover:shadow-[0_0_30px_rgba(34,211,238,0.25)] transition">
+                <div class="card-bg rounded-xl border border-slate-800/80 p-8 hover:border-cyan-400/60 transition">
                     <span class="text-cyan-400 text-3xl mb-2 block orbitron">S02</span>
-                    <h3 class="orbitron text-xl font-semibold mb-3">Data Security Imperative</h3>
-                    <p class="text-sm sm:text-base text-slate-300 leading-relaxed">
+                    <h3 class="orbitron text-xl font-semibold mb-3 text-white">Data Security Imperative</h3>
+                    <p class="text-slate-300 leading-relaxed">
                         Sensitive IP cannot be uploaded to public platforms like ChatGPT. Clients like Hedge Funds require absolute data sovereignty.
                     </p>
                 </div>
-                <div class="card-bg rounded-xl border border-slate-800/80 p-7 hover:border-cyan-400/60 hover:shadow-[0_0_30px_rgba(34,211,238,0.25)] transition">
+                <div class="card-bg rounded-xl border border-slate-800/80 p-8 hover:border-cyan-400/60 transition">
                     <span class="text-cyan-400 text-3xl mb-2 block orbitron">C03</span>
-                    <h3 class="orbitron text-xl font-semibold mb-3">DIY Failure Rate</h3>
-                    <p class="text-sm sm:text-base text-slate-300 leading-relaxed">
+                    <h3 class="orbitron text-xl font-semibold mb-3 text-white">DIY Failure Rate</h3>
+                    <p class="text-slate-300 leading-relaxed">
                         Building a secure, custom RAG stack costs £1M+ and requires complex in-house talent. The failure cost is too high.
                     </p>
                 </div>
@@ -202,33 +211,33 @@
             </h2>
             <div class="grid lg:grid-cols-2 gap-12 items-start">
                 <div>
-                    <h3 class="orbitron text-2xl sm:text-3xl font-semibold mb-6 text-cyan-400 glow-soft">
+                    <h3 class="orbitron text-2xl sm:text-3xl font-semibold mb-6 text-cyan-400">
                         IP as a Service: Guaranteed Control
                     </h3>
                     <p class="text-base sm:text-lg text-slate-200 leading-relaxed mb-6">
                         ArcticX doesn't build models from scratch. We sell proprietary IP, architecture, and expert deployment—not just labor. We deploy a standardized, repeatable RAG architecture (our Playbook) into the client's own secure cloud environment.
                     </p>
-                    <ul class="space-y-4 text-sm sm:text-base text-slate-300">
+                    <ul class="space-y-4 text-slate-300">
                         <li class="flex items-start gap-3">
-                            <span class="mt-1 h-2 w-2 rounded-full bg-cyan-400"></span>
+                            <span class="mt-2 h-2 w-2 rounded-full bg-cyan-400"></span>
                             <p>Deployment Guarantee: Every solution is a standalone, ring-fenced instance, guaranteeing zero data leakage.</p>
                         </li>
                         <li class="flex items-start gap-3">
-                            <span class="mt-1 h-2 w-2 rounded-full bg-cyan-400"></span>
+                            <span class="mt-2 h-2 w-2 rounded-full bg-cyan-400"></span>
                             <p>Goldilocks Zone: Faster and more cost-effective than global integrators, while offering the security and accuracy generic platforms cannot provide.</p>
                         </li>
                         <li class="flex items-start gap-3">
-                            <span class="mt-1 h-2 w-2 rounded-full bg-cyan-400"></span>
+                            <span class="mt-2 h-2 w-2 rounded-full bg-cyan-400"></span>
                             <p>Predictable Pricing: Fixed Price for Proprietary IP (£250k - £750k MVP) and predictable Annual Recurring Revenue (ARR).</p>
                         </li>
                     </ul>
                 </div>
 
-                <div class="card-bg rounded-xl border-glow-soft p-8">
+                <div class="card-bg rounded-xl border border-slate-800/80 p-8">
                     <h4 class="orbitron text-2xl text-center mb-6 text-white border-b border-slate-800 pb-4">
                         ARCTICX EDGE
                     </h4>
-                    <div class="space-y-4 text-sm sm:text-base">
+                    <div class="space-y-4">
                         <div class="flex justify-between items-center py-3 border-b border-slate-800">
                             <span class="text-slate-300">Primary Cost Driver</span>
                             <span class="text-cyan-400 font-bold text-right">Fixed Fee for Proprietary IP</span>
@@ -254,12 +263,12 @@
                 THE ARCTICX ENGINE: IP FOR ALPHA & CONTROL
             </h2>
             <div class="grid md:grid-cols-2 gap-10 text-left">
-                <div class="card-bg rounded-xl border border-slate-800/80 p-8 hover:border-cyan-400/60 hover:shadow-[0_0_30px_rgba(34,211,238,0.25)] transition">
+                <div class="card-bg rounded-xl border border-slate-800/80 p-8 hover:border-cyan-400/60 transition">
                     <div class="flex items-center mb-4">
                         <span class="text-cyan-400 text-4xl mr-3 orbitron">&#123;01&#125;</span>
                         <h3 class="orbitron text-xl sm:text-2xl font-semibold text-white">Two-Step Filtered RAG</h3>
                     </div>
-                    <p class="text-slate-200 mb-3 text-sm sm:text-base leading-relaxed">
+                    <p class="text-slate-200 mb-3 leading-relaxed">
                         Our core RAG IP uses Metadata Filters (Ticker, Date, Thesis) before semantic search.
                     </p>
                     <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
@@ -267,12 +276,12 @@
                     </p>
                 </div>
 
-                <div class="card-bg rounded-xl border border-slate-800/80 p-8 hover:border-cyan-400/60 hover:shadow-[0_0_30px_rgba(34,211,238,0.25)] transition">
+                <div class="card-bg rounded-xl border border-slate-800/80 p-8 hover:border-cyan-400/60 transition">
                     <div class="flex items-center mb-4">
                         <span class="text-cyan-400 text-4xl mr-3 orbitron">&#123;02&#125;</span>
                         <h3 class="orbitron text-xl sm:text-2xl font-semibold text-white">Structured Output (LoRA)</h3>
                     </div>
-                    <p class="text-slate-200 mb-3 text-sm sm:text-base leading-relaxed">
+                    <p class="text-slate-200 mb-3 leading-relaxed">
                         Custom fine-tuning (LoRA) layer that forces the LLM to output key insights in clean JSON format.
                     </p>
                     <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
@@ -290,35 +299,35 @@
                 MEASURABLE RESULTS
             </h2>
             <div class="grid lg:grid-cols-2 gap-10">
-                <div class="card-bg rounded-xl border-glow-soft p-8 flex flex-col">
+                <div class="card-bg rounded-xl border border-slate-800/80 p-8 flex flex-col">
                     <h3 class="orbitron text-2xl sm:text-3xl font-semibold mb-3 text-cyan-400">
                         Alpha Generation <span class="text-base sm:text-xl text-slate-400">(Hedge Fund)</span>
                     </h3>
-                    <p class="text-slate-200 mb-6 text-sm sm:text-base leading-relaxed">
+                    <p class="text-slate-200 mb-6 leading-relaxed">
                         Client Problem: Hours of latency between earnings calls and actionable analyst synthesis. Unstructured text was too slow.
                     </p>
                     <div class="mt-auto pt-4 border-t border-slate-800">
                         <p class="text-xl sm:text-2xl font-bold text-white mb-2">
                             Result: 99% Reduction in Synthesis Time
                         </p>
-                        <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                        <p class="text-slate-300 leading-relaxed">
                             The Alpha Agent converts multiple research sources into a structured, tradable JSON summary in 30 seconds.
                         </p>
                     </div>
                 </div>
 
-                <div class="card-bg rounded-xl border-glow-soft p-8 flex flex-col">
+                <div class="card-bg rounded-xl border border-slate-800/80 p-8 flex flex-col">
                     <h3 class="orbitron text-2xl sm:text-3xl font-semibold mb-3 text-cyan-400">
                         Message Control <span class="text-base sm:text-xl text-slate-400">(Political Campaign)</span>
                     </h3>
-                    <p class="text-slate-200 mb-6 text-sm sm:text-base leading-relaxed">
+                    <p class="text-slate-200 mb-6 leading-relaxed">
                         Client Problem: High reputational risk from off-message statements and slow response times. Needed a secure, single source of truth.
                     </p>
                     <div class="mt-auto pt-4 border-t border-slate-800">
                         <p class="text-xl sm:text-2xl font-bold text-white mb-2">
-                            Result: Total Message Control & Speed
+                            Result: Total Message Control &amp; Speed
                         </p>
-                        <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                        <p class="text-slate-300 leading-relaxed">
                             The On-Message Engine drafts rapid-response briefs in 15 minutes (vs. 2-4 hours), citing only the official manifesto.
                         </p>
                     </div>
@@ -328,32 +337,32 @@
     </section>
 
     <!-- TEAM -->
-    <section id="team" class="py-20 px-4 sm:px-6 lg:px-8 data-grid-pattern bg-black border-t border-slate-900">
+    <section id="team" class="py-20 px-4 sm:px-6 lg:px-8 bg-black border-t border-slate-900">
         <div class="max-w-6xl mx-auto text-center">
-            <h2 class="orbitron text-3xl sm:text-4xl font-bold mb-12 text-white glow-soft">
+            <h2 class="orbitron text-3xl sm:text-4xl font-bold mb-12 text-white">
                 MEET THE TEAM
             </h2>
             <div class="grid md:grid-cols-3 gap-10">
-                <div class="card-bg rounded-xl border border-slate-800/80 p-8 hover:border-cyan-400/60 hover:shadow-[0_0_30px_rgba(34,211,238,0.25)] transition">
+                <div class="card-bg rounded-xl border border-slate-800/80 p-8 hover:border-cyan-400/60 transition">
                     <div class="w-20 h-20 mx-auto mb-5 rounded-full border-2 border-cyan-400 bg-slate-900 flex items-center justify-center">
                         <span class="text-3xl text-cyan-400">&#x25D1;</span>
                     </div>
-                    <h3 class="orbitron text-xl font-semibold mb-1 text-white">Steve Milton</h3>
-                    <p class="text-cyan-400 text-sm">Chief Executive Officer</p>
+                    <h3 class="orbitron text-xl font-semibold mb-1 text-slate-50">Steve Milton</h3>
+                    <p class="text-cyan-300 text-sm">Chief Executive Officer</p>
                 </div>
-                <div class="card-bg rounded-xl border border-slate-800/80 p-8 hover:border-cyan-400/60 hover:shadow-[0_0_30px_rgba(34,211,238,0.25)] transition">
+                <div class="card-bg rounded-xl border border-slate-800/80 p-8 hover:border-cyan-400/60 transition">
                     <div class="w-20 h-20 mx-auto mb-5 rounded-full border-2 border-cyan-400 bg-slate-900 flex items-center justify-center">
                         <span class="text-3xl text-cyan-400">&#x25C7;</span>
                     </div>
-                    <h3 class="orbitron text-xl font-semibold mb-1 text-white">Illia Dyanskyi</h3>
-                    <p class="text-cyan-400 text-sm">Chief Technology Officer</p>
+                    <h3 class="orbitron text-xl font-semibold mb-1 text-slate-50">Illia Dyanskyi</h3>
+                    <p class="text-cyan-300 text-sm">Chief Technology Officer</p>
                 </div>
-                <div class="card-bg rounded-xl border border-slate-800/80 p-8 hover:border-cyan-400/60 hover:shadow-[0_0_30px_rgba(34,211,238,0.25)] transition">
+                <div class="card-bg rounded-xl border border-slate-800/80 p-8 hover:border-cyan-400/60 transition">
                     <div class="w-20 h-20 mx-auto mb-5 rounded-full border-2 border-cyan-400 bg-slate-900 flex items-center justify-center">
                         <span class="text-3xl text-cyan-400">&#x25E3;</span>
                     </div>
-                    <h3 class="orbitron text-xl font-semibold mb-1 text-white">Ryan Horn</h3>
-                    <p class="text-cyan-400 text-sm">Chief Commercial Officer</p>
+                    <h3 class="orbitron text-xl font-semibold mb-1 text-slate-50">Ryan Horn</h3>
+                    <p class="text-cyan-300 text-sm">Chief Commercial Officer</p>
                 </div>
             </div>
         </div>
@@ -362,26 +371,26 @@
     <!-- CONTACT -->
     <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8 bg-[#020617] border-t border-slate-900">
         <div class="max-w-4xl mx-auto text-center">
-            <h2 class="orbitron text-3xl sm:text-4xl font-bold mb-6 text-cyan-400 glow-soft">
+            <h2 class="orbitron text-3xl sm:text-4xl font-bold mb-6 text-cyan-400">
                 CONTACT ARCTICX TO LEARN MORE
             </h2>
             <p class="text-lg text-slate-200 mb-10 leading-relaxed">
                 Your unique challenge requires a bespoke solution. We price based on the Value of the outcome, not time and materials.
             </p>
             <div class="flex flex-col sm:flex-row justify-center gap-6 mb-10">
-                <div class="card-bg flex-1 rounded-xl border border-cyan-400/70 shadow-[0_0_30px_rgba(34,211,238,0.25)] p-6">
+                <div class="card-bg flex-1 rounded-xl border border-cyan-400/70 p-6">
                     <p class="orbitron text-lg sm:text-xl text-cyan-400">ALPHA GENERATION TIER</p>
                     <p class="text-base sm:text-lg text-slate-200 mt-2">MVP Fixed Fee from £750,000</p>
                     <p class="text-xs sm:text-sm text-slate-500 mt-1">Priced relative to Alpha potential.</p>
                 </div>
-                <div class="card-bg flex-1 rounded-xl border border-cyan-400/70 shadow-[0_0_30px_rgba(34,211,238,0.25)] p-6">
+                <div class="card-bg flex-1 rounded-xl border border-cyan-400/70 p-6">
                     <p class="orbitron text-lg sm:text-xl text-cyan-400">MESSAGE CONTROL TIER</p>
                     <p class="text-base sm:text-lg text-slate-200 mt-2">MVP Fixed Fee from £250,000</p>
                     <p class="text-xs sm:text-sm text-slate-500 mt-1">Priced relative to Reputational Risk Avoidance.</p>
                 </div>
             </div>
             <a href="mailto:info@arcticx.ai"
-               class="inline-flex items-center justify-center px-8 py-3 bg-white text-black orbitron font-bold text-sm sm:text-lg rounded-sm tracking-wide hover:bg-cyan-400 hover:shadow-[0_0_30px_rgba(34,211,238,0.45)] transition">
+               class="inline-flex items-center justify-center px-8 py-3 bg-white text-black orbitron font-bold text-sm sm:text-lg rounded-sm tracking-wide hover:bg-cyan-400 hover:shadow-[0_0_30px_rgba(34,211,238,0.45)] transition btn-primary-glow">
                 REQUEST ARCHITECTURE DECK
             </a>
         </div>
