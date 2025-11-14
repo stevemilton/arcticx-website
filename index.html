@@ -62,27 +62,6 @@
             opacity: 0.8;
         }
 
-        /* --- SCANLINE SECTION DIVIDER (New Design Element) --- */
-        .section-divider {
-            position: relative;
-            padding-top: 1px; /* Creates space for the border effect */
-        }
-        .section-divider::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 3px;
-            background: linear-gradient(90deg, transparent 0%, var(--accent) 50%, transparent 100%);
-            opacity: 0.5;
-            animation: scanline 4s infinite linear;
-        }
-        @keyframes scanline {
-            0% { transform: translateX(-100%); }
-            100% { transform: translateX(100%); }
-        }
-
         /* Custom Scrollbar */
         ::-webkit-scrollbar {
             width: 8px;
